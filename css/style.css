@@ -6,6 +6,26 @@
 	margin:0;
 }
 
+
+th {
+	width: 8%;
+	text-align: center;
+	color: #E02D3F;
+	font-size: 1.3em;
+}
+td {
+	text-align: center;
+}
+
+th.strategy{
+	width: 150px;
+}
+
+
+td:first-child {
+	font-weight: 600;
+}
+
 .carousel-navigation.left {  
     margin-left: -95px;
 }
