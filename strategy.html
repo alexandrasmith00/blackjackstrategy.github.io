@@ -59,7 +59,7 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="section-heading text-center">
-					<h2 class="h-bold">About the game</h2>
+					<h2 class="h-bold">Basic Strategy</h2>
 					<div class="divider-header"></div>
 					</div>
 				</div>
@@ -71,17 +71,38 @@
 	            <div class="col-lg-8 col-lg-offset-2">		
 						<p>
 
-						Blackjack has been the study of statistical analysis for a long time.  Casinos offer this form of gambling (and all other forms of gambling) because the odds are tipped in the house’s favor.  But what if the odds could be tipped in the player’s favor?  We all want to be able to swindle big casinos for a bit of extra cash.  So, is it possible?
+						Blackjack is at heart a mathematical game. Players develop a basic strategy (when to hit and when to stand) in order to minimize the house edge. They then use their strategy to make informed decisions at each step in the game. We have used simulations of play to calculate the probabilities of busting or winning in certain situations, but these probabilities reflect what happens in real game play only when hundreds or thousands of plays have been played. Thus, there is always an element of unpredictability in each hand that lends the game its excitement!
+
 						</p>
 
-
+						<h6><span class="numbered">Example 1</span> You have a ten and an eight.  The dealer is showing a 6. </h6>
 						<div class="row">
-							<div class="col-sm-4"><img src="http://share.gifyoutube.com/v9MB35.gif" width="100%"></div>
-							<div class="col-sm-4"><img src="http://share.gifyoutube.com/yE2gw7.gif" width="100%"></div>
-							<div class="col-sm-4"><img src="http://share.gifyoutube.com/vZXej8.gif" width="100%"></div>
-						</div><br/>
+							<div class="col-sm-10 col-sm-offset-1">
+								<p>
+									<b>You should stand.</b>  The total of your current hand is 18. Given your hand, the dealer's 6 is more favorable to your winning odds than most other cards if you hit. Our simulations show you have a 36% chance of hitting and winning on a dealer's 6. On the contrary, you should stand if the dealer had a 9, which means a much lower 28% chance of winning on your hit.
+								</p><br/>
+							</div>
 
-						<p>  You have probably seen the game played in movies like 21, The Hangover and Rain Man. </p>
+						</div>
+
+
+						<h6><span class="numbered">Example 2</span> You have an ace and a four.  The dealer is showing a 6. </h6>
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-1">
+								<p>
+									<b>You should hit.</b>  The total of your current hand is 15. Given your hand, the dealer's 6 is more favorable to your winning odds than most other cards if you hit. Our simulations show you have a 36% chance of hitting and winning on a dealer's 6. On the contrary, you should stand if the dealer had a 9, which means a much lower 28% chance of winning on your hit.
+								</p><br/>
+							</div>
+						</div>
+
+
+				<p>The following graph shows that the probability of busting is higher when the player's cards have a higher total. The probability of busting decreases nearly linearly as the total of the player's hand increases. This makes sense because there is a larger gap between the player's hand total and 21. When the player's hand is greater than 14, it is more than 50% likely that the player will bust.</p>
+
+				<img src="/img/busting.png">
+
+				<p>When taking into account the dealer's face up card when the player decides to hit or stand, our graphs show a very interesting phenomena. When the dealer has a very low card, except Ace, the player has a much higher chance of winning when they decide to hit. This steadily decreases, and the probability of winning reaches a minimum when the dealer's face up card is a 9. When the dealer's face up card increases beyond 9, the player's chance at winning increases again the higher the dealer's face up card is. This shows that the reveal of the dealer's face up card should influence hitting strategy.</p>
+
+				<p>The last plot shows the win percentage for a player's hand over all possible dealer face up cards. The win percentage decreases much less linearly than the probability of not busting as the total of the player's hand increases. There is a significantly lower probability of winning when you hit on 16 or higher. The less linear decrease in winning probability than in busting probability is likely due to the increased number of factors that affect winning. The player must stay under 21 as well as beat the dealer's total.</p>
 
 	            </div>
 	        </div>		
