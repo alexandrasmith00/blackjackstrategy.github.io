@@ -6,7 +6,9 @@
 	margin:0;
 }
 
-
+.notred {
+	color: black;
+}
 .box { 
     height:304px;
     width:210px;
