@@ -17,14 +17,16 @@
 .carousel-caption {
       padding: 0 20px;
       padding-top: 50px;
-      text-align:center;
       position: relative;
+      font-family: 'Ek Mukta', sans-serif;
+      font-weight: 300;
+      font-size: 1em;
 }
 
 .carousel-indicators > li,
 .carousel-indicators > li.active{
-    width: 20px;
-    height: 20px;
+    width: 8%;
+    height: 8%;
     border-radius: 5px;
     border: solid 1px #E02D3F;
     text-indent: 0;
