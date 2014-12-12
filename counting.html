@@ -70,13 +70,20 @@
 	        <div class="row">
 	            <div class="col-lg-8 col-lg-offset-2">		
 						<p>
+							Card counting is not magic--even though Hollywood would make it seem that way.  Card counting is simply a way to have a better understanding of the cards left in the deck during play.  Many moves in basic blackjack strategy rely upon the unknown card being the most common card: a 10 (as in a 10, J, Q, or a K).  For example, 3, 4, 5 and 6 are often considered bust cards: when the dealer is showing a bust card, he is most likely to turn over a ten, and then hit with another ten and bust.  While this does not always happen, the high occurences of tens in the deck makes it more common, than say, the dealer revealing a 5 and then hitting another 5.
+						</p>
 
-						Blackjack has been the study of statistical analysis for a long time.  Casinos offer this form of gambling (and all other forms of gambling) because the odds are tipped in the house’s favor.  But what if the odds could be tipped in the player’s favor?  We all want to be able to swindle big casinos for a bit of extra cash.  So, is it possible?
+						<p>
+							Card counting is a way to take advantage of the imbalance of high cards to low cards in the shoe.  When there are many high cards left in the shoe, the assumptions behind the strategy happen more often, making the game more favorable for the player.  When there are many low cards left in the shoe, the assumptions do not happen as often, making the game more favorable for the casino.  <b class="red">Therefore, card counting is a way of judging the balance of high cards to low cards in a shoe.</b>
+						</p>
+
+						<p>
+							We simulated 500 shoes of blackjack play, with each shoe consisting of 8 decks.  Over the course of these 34,000 hands, the player followed the basic blackjack strategy described <a href="http://www.blackjackinfo.com/bjbse.php">here</a> and kept a running count for seven different card counting strategies.  Our goal was to determine which of these systems worked best.  Each system works by keeping a running tally--adding 1 for low cards, subtracting 1 for high cards, and adding 0 for neutral cards.  The seven strategies are detailed below.
 						</p>
 
 
 
-					<table border="1">
+					<table class="strategies" border="1">
 					<tr>
 					<th class="strategy">Card Strategy</th>
 					<th>2</th>
@@ -182,8 +189,44 @@
 					<td align="center">−1</td>
 					</tr>
 					</table>
+<br/>
+						<p>
+							Since the count is only a metric of the current shoe, it must be reset to zero at the start of every shoe.   In addition, the count must be weighted throughout game play. Take, a count of +10. We know this is favorable for the player. However, if this is the count after the first hand, it is different than the count for the last hand in the shoe. This is because we can see that as we see more and more cards (as the shoe is played), we get a more accurate count. Therefore, we will weight the count according to how much of the shoe has been played. We do this by dividing by the number of remaining decks.
+						</p>
 
+						<p>We will then use each of these counts to inform our betting in the following way. We have a standard bet, in this case, it is 25. When playing without a betting strategy, we bet 25 on every hand. When we are playing with a betting strategy, we bet $25 on neutral hands. When the count becomes very low, we want to bet the minimum bet (set to the minimum possible bet at the table). In this case, the minimum bet is 15. We then create a bet spread based on the count. When the weighted count reaches +2, we bet 3x our standard bet. When the weighted count reaches +3, +4, +5, +6, +7, or +8, we bet 5x, 7x, 9x, 12x, 14x, or 20x, respectively. In doing so, we are trying to put more money on the table when the odds are in our favor.</p>
 
+						<table class="bets" border="1">
+							<tr>
+							<td >Weighted Count</td>
+							<td> <0 </td>
+							<td> 0 </td>
+							<td> +1 </td>
+							<td> +2 </td>
+							<td> +3 </td>
+							<td> +4 </td>
+							<td> +5 </td>
+							<td> +6 </td>
+							<td> +7 </td>
+							<td> +8 </td>
+							</tr>
+							<tr>
+							<td>Bet Spread</td>
+							<td align="center">Min.</td>
+							<td align="center">1x</td>
+							<td align="center">1x</td>
+							<td align="center">3x</td>
+							<td align="center">5x</td>
+							<td align="center">7x</td>
+							<td align="center">9x</td>
+							<td align="center">12x</td>
+							<td align="center">14x</td>
+							<td align="center">20x</td>
+							</tr>
+							<tr>
+						</table><br/>
+
+						<p>When looking at the winnings over all the simulations (34,111 hands), we found that KO by far amassed the most winnings.  It is important to note that all card counting methods led to more winnings than no card counting at all.  Therefore, card counting is an effective strategy for increasing winnings.  </p>
 	            </div>
 	        </div>		
 		</div>

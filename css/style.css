@@ -33,23 +33,34 @@
     font-size: 6em;
 }
 
+.bets td {
+	width: 8%;
+	text-align: center;
+}
+.bets td:first-child {
+	width: 200px;
+	color: #E02D3F;
+	font-weight: 600;
+	line-height: 3em;
+}
 
-th {
+
+.strategies th {
 	width: 8%;
 	text-align: center;
 	color: #E02D3F;
 	font-size: 1.3em;
 }
-td {
+.strategies td {
 	text-align: center;
 }
 
-th.strategy{
+.strategies th.strategy{
 	width: 150px;
 }
 
 
-td:first-child {
+.strategies td:first-child {
 	font-weight: 600;
 }
 
