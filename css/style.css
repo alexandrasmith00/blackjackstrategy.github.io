@@ -16,6 +16,7 @@
 
 .carousel-caption {
       padding: 0 20px;
+      width: 100%;
       padding-top: 50px;
       position: relative;
       font-family: 'Ek Mukta', sans-serif;
@@ -24,9 +25,7 @@
       color: #E02D3F;
 }
 
-.carousel-indicators:before {
-	content: "Player Total: ";
-}
+
 
 .carousel-indicators > li,
 .carousel-indicators > li.active{
