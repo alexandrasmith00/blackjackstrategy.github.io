@@ -42,6 +42,11 @@ h5 {
 }
 h6 {
 	font-size: 20px;
+	text-align: center;
+}
+
+h6 .numbered {
+	color: #E02D3F;
 }
 
 h1,
