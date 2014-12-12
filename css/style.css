@@ -16,8 +16,8 @@
 
 .carousel-caption {
       padding: 0 20px;
+      padding-top: 50px;
       text-align:center;
-      position: relative;
 }
 
 .carousel-indicators > li,
@@ -30,7 +30,8 @@
     color: #E02D3F;
 }
 .carousel-indicators > li.active {
-    background: white;
+    background: #E02D3F;
+    color: white;
 }
 
 
