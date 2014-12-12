@@ -248,20 +248,25 @@ blockquote strong {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+    border-radius: 5px;
+
 }
 
 .navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li.active {
-    outline: 0;
-    background-color: rgba(255,255,255,.2);
+.navbar-custom .nav li a:focus {
+	color: #E02D3F;
+	border-radius: 5px;
+
+
 }
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li.active {
-    outline: 0;
-    background-color: rgba(255,255,255,.2);
+
+.navbar-custom .nav li.active a {
+    background-color: #E02D3F;
+    color: #fff;
+    border-radius: 5px;
+
 }
+
 
 .navbar-toggle {
     padding: 4px 6px;
