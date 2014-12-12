@@ -21,6 +21,19 @@
       position: relative;
 }
 
+.carousel-indicators > li,
+.carousel-indicators > li.active{
+    width: 100px;
+    height: 25px;
+    border-radius: 0;
+    border: solid 1px #808080;
+    background: #efefef;
+    text-indent: 0;
+}
+.carousel-indicators > li.active {
+    background: white;
+}
+
 
 body {
     width: 100%;
