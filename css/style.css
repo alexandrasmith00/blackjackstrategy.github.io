@@ -23,11 +23,12 @@
 
 .carousel-indicators > li,
 .carousel-indicators > li.active{
-    width: 20px;
-
-    border-radius: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
     border: solid 1px #E02D3F;
     text-indent: 0;
+    color: #E02D3F;
 }
 .carousel-indicators > li.active {
     background: white;
