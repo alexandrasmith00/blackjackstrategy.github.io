@@ -24,6 +24,10 @@
       color: #E02D3F;
 }
 
+.carousel-indicators:before {
+	content: "Player Total: ";
+}
+
 .carousel-indicators > li,
 .carousel-indicators > li.active{
     width: 7%;
