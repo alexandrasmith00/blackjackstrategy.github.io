@@ -29,6 +29,7 @@
 
 .carousel-indicators > li,
 .carousel-indicators > li.active{
+	padding-top: 5%;
     width: 7%;
     height: 7%;
     border-radius: 5px;
