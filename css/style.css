@@ -7,6 +7,33 @@
 }
 
 
+.box { 
+    height:304px;
+    width:210px;
+}
+.overlay {  
+    background:rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    text-align:center;
+    opacity:0;    
+    width:100%;height:100%; 
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.box:hover .overlay {
+    opacity:1;
+}
+.search {
+    position:relative;
+    top:50%;
+    font-size: 6em;
+}
+
+
 th {
 	width: 8%;
 	text-align: center;
